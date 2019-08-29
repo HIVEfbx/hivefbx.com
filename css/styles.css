@@ -1,0 +1,23 @@
+/*********
+* Colors *
+*********/
+/* Palette URL: http://paletton.com/#uid=71p1K0koBqBf0-Pk5tnrLlRvKh2 */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/*******
+* Text *
+*******/
+a {
+  color: #D4B731;
+}
+
+a:hover {
+  color: #AE9317;
+}
+
+a:visited {
+  color: #EAD057;
+}
+
+/*# sourceMappingURL=styles.css.map */
