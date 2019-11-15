@@ -1,1 +1,2 @@
-brew "sass/sass/sass"
+brew 'sass/sass/sass'
+brew 'awscli'

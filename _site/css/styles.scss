@@ -1,0 +1,45 @@
+/*********
+* Colors *
+*********/
+
+/* Palette URL: http://paletton.com/#uid=71p1K0koBqBf0-Pk5tnrLlRvKh2 */
+
+$color-primary-lightest: #FFEA87;
+$color-primary-lighter: #EAD057;
+$color-primary: #D4B731;
+$color-primary-darker: #AE9317;
+$color-primary-darkest: #887001;
+
+$color-secondary-1-1: #60B59C;
+$color-secondary-1-2: #3A9B7D;
+$color-secondary-1-0: #208C6B;	/* Main Secondary color (1) */
+$color-secondary-1-3: #0F7355;
+$color-secondary-1-4: #015A3F;
+
+$color-secondary-2-1: #FFB187;
+$color-secondary-2-2: #EA8A57;
+$color-secondary-2-0: #D46A31;	/* Main Secondary color (2) */
+$color-secondary-2-3: #AE4C17;
+$color-secondary-2-4: #883001;
+
+$color-complement-1: #7F6EBC;
+$color-complement-2: #5C48A1;
+$color-complement-0: #452F92;	/* Main Complement color */
+$color-complement-3: #311C78;
+$color-complement-4: #1E0C5D;
+
+/*******
+* Text *
+*******/
+
+a {
+	color: $color-primary;
+}
+
+a:hover {
+	color: $color-primary-darker;
+}
+
+a:visited {
+	color: $color-primary-lighter;
+}
