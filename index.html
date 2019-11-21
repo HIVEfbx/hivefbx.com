@@ -15,15 +15,537 @@
 		
 		<meta name="og:site_name" content="The Hive LLC Fairbanks">
 		
-		<title>The Hive</title>
+		<title>the HIVE – Downtown Fairbanks Coworking</title>
 		
-		<link href='css/styles.css' rel='stylesheet' type='text/css'>
+		<link href='css/index.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	</head>
 	<body>
-		<center>
-			<img src='img/Logo_small.jpg' />
-			<br />
-			Coming soon! Contact: <a mailto:'andrew@hivefbx.com'>andrew@hivefbx.com</a>
-		</center>
+
+		<!--------
+		- NAVBAR -
+		--------->
+
+		<div class="w3-top">
+		  <div class="w3-bar" id="myNavbar">
+		    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+		      <i class="fa fa-bars"></i>
+		    </a>
+		    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+		    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+		    <a href="#offerings" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-handshake-o"></i> OFFERINGS</a>
+		    <a href="#nearby" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-arrows-alt"></i> NEARBY</a>
+		    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+		    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+		      <i class="fa fa-search"></i>
+		    </a>
+		  </div>
+
+		  <!-- Navbar on small screens -->
+		  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+		    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+		    <a href="#offerings" class="w3-bar-item w3-button" onclick="toggleFunction()">OFFERINGS</a>
+		    <a href="#nearby" class="w3-bar-item w3-button" onclick="toggleFunction()">NEARBY</a>
+		    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+		    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+		  </div>
+		</div>
+
+		<!-------
+		- ABOUT -
+		-------->
+
+		<!-- Parallax Image with Logo Text -->
+		<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+		  <div class="display-top-third w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity opaquebox" style="white-space:nowrap;">
+		  	<div class="company-name">
+		  		the HIVE
+		  	</div>
+		  	<div>
+				<img src="img/logo-mini.png" />
+			</div>
+			<div class="slogan">
+				connect. create. collaborate.
+			</div>
+		  </div>
+		  <div class="display-bottom-third w3-center padding-huge w3-xlarge w3-wide w3-animate-opacity opaquebox" style="white-space:nowrap;">
+		  	<div class="intro-text">
+				Welcome to<br/>your new<br/>creative space.
+			</div>
+		  </div>
+		</div>
+
+		<!-- Container (About Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="about">
+		  <h3 class="w3-center">Cowork in Downtown Fairbanks!</h3>
+		  <div class="narrow-content">
+		  	<p>
+		  		Located in the historic Lathrop Building downtown, the HIVE is where you can come to get work done. We provide a comfortable office environment suited to all your needs, so you can relax and focus.
+		  	</p>
+
+			<p>
+			  	The HIVE is operated by <a href="https://linkedin.com/in/andrewrmcknight">Andrew McKnight</a>, a software engineer who moved to Fairbanks in the summer of 2018–moved for the mountains, but stayed for the people! Working remotely, he split time between his dry cabin and various cafés before deciding he needed some space of his own to work. Working at companies with offices in Boston and San Francisco has shown him what it takes to create a good space for deep work and getting into your flow.
+		  </p>
+
+			<center>
+			  	<img src="https://www.gravatar.com/avatar/34a693589079d04198ebc069ef17be70.jpg?s=200" />
+			  </center>
+		  </div>
+		  <p>
+		  	
+		  </p>
+		</div>
+
+		<!-----------
+		- OFFERINGS -
+		------------>
+
+		<!-- Parallax Image with Offering Text -->
+		<div class="bgimg-2 w3-display-container w3-opacity-min">
+		  <div class="w3-display-middle">
+		    <span class="w3-xxlarge w3-text-white w3-wide">OFFERINGS</span>
+		  </div>
+		</div>
+
+		<!-- Container (Offering Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="offerings">
+		  <h3 class="w3-center">Walk in or join up</h3>
+		  <div class="narrow-content">
+		  	Whether you need a place to work every day, need a change of scenery every so often, or need to stop in to print a few pages, we have something for everyone.
+		  </div><br>
+		</div>
+
+		<!-- 
+		<div>
+		  	<table class="service-matrix" cellspacing="0">
+		  		<tr style="background-color: #ccc;">
+			  		<th>Membership type</th>
+			  		<th>Reserved desk</th>
+			  		<th>Roaming desk</th>
+			  		<th>Multiday</th>
+			  		<th>Day</th>
+			  		<th>Conference room</th>
+			  		<th>Walk-in</th>
+		  		</tr>
+		  		<tr>
+		  			<th>Battery/Electronics Recycling</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Document shredding</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td colspan="2">10¢/page</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Copy/Print</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td colspan="2"><b>Color:</b> 25¢/page<br /><b>B/W:</b> 5¢/page</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Document scanning</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td colspan="2">5¢/page</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Conference room</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Projector</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Desk/chair</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr>
+		  			<th>High-speed WiFi</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Snacks</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Microwave/coffeemaker</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Mailing address</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Minifridge</th>
+		  			<td>✅</td>
+		  			<td>✅</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Locking file cabinet</th>
+		  			<td>✅</td>
+		  			<td>$5/month</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr>
+		  			<th>External monitor</th>
+		  			<td>$10/month</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr>
+		  			<th>Keyboard/mouse</th>
+		  			<td>$5/month</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  			<td>⛔️</td>
+		  		</tr>
+		  		<tr style="background-color: #ccc;">
+		  			<th>Price</th>
+		  			<td>$200/month</td>
+		  			<td>$125/month</td>
+		  			<td>$90</td>
+		  			<td>$10</td>
+		  			<td>$40/hour</td>
+		  			<td>N/A</td>
+		  		</tr>
+		  	</table>
+		  </div> -->
+
+		<div style="max-width: 800px; text-align: center; margin: auto;">
+			<div class="w3-container w3-row-padding" style="text-align: left; display: inline-block; margin: auto;">
+				<div class="w3-half">
+					<div class="w3-card">
+						<center>
+							<h3>Reserved desk</h3>
+						</center>
+						<ul>
+							<li>Battery/Electronics Recycling</li>
+							<li>Document shredding</li>
+							<li>Copy/Print</li>
+							<li>Document scanning</li>
+							<li>Conference room</li>
+							<li>Projector</li>
+							<li>Desk/chair</li>
+							<li>High-speed WiFi</li>
+							<li>Snacks</li>
+							<li>Microwave/coffeemaker</li>
+							<li>Mailing address</li>
+							<li>Minifridge</li>
+							<li>Locking file cabinet</li>
+							<li>External monitor for $10/month</li>
+							<li>Keyboard/mouse for $5/month</li>
+						</ul>
+						<center>
+							<h4>$200/month</h4>
+						</center>
+					</div>
+				</div>
+				<div class="w3-half">
+					<div class="w3-card">
+						<center>
+							<h3>Roaming desk</h3>
+						</center>
+						<ul>
+							<li>Battery/Electronics Recycling</li>
+							<li>Document shredding</li>
+							<li>Copy/Print</li>
+							<li>Document scanning</li>
+							<li>Conference room</li>
+							<li>Projector</li>
+							<li>Desk/chair</li>
+							<li>High-speed WiFi</li>
+							<li>Snacks</li>
+							<li>Microwave/coffeemaker</li>
+							<li>Mailing address</li>
+							<li>Minifridge</li>
+							<li>Locking file cabinet for $5/month</li>
+						</ul>
+						<center>
+							<h4>$125/month</h4>
+						</center>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-container w3-row-padding" style="text-align: left; display: inline-block; margin: auto;">
+				<div class="w3-half">
+					<div class="w3-card">
+						<center>
+							<h3>Multiday</h3>
+						</center>
+						<ul>
+							<li>Battery/Electronics Recycling</li>
+							<li>Document shredding</li>
+							<li>Copy/Print</li>
+							<li>Document scanning</li>
+							<li>Conference room</li>
+							<li>Projector</li>
+							<li>Desk/chair</li>
+							<li>High-speed WiFi</li>
+							<li>Snacks</li>
+							<li>Microwave/coffeemaker</li>
+						</ul>
+						<center>
+							<h4>$90 for 10 days over 60 days</h4>
+						</center>
+					</div>
+				</div>
+				<div class="w3-half">
+					<div class="w3-card">
+						<center>
+							<h3>Day pass</h3>
+						</center>
+						<ul>
+							<li>Battery/Electronics Recycling</li>
+							<li>Document shredding</li>
+							<li>Copy/Print</li>
+							<li>Document scanning</li>
+							<li>Conference room</li>
+							<li>Projector</li>
+							<li>Desk/chair</li>
+							<li>High-speed WiFi</li>
+							<li>Snacks</li>
+							<li>Microwave/coffeemaker</li>
+						</ul>
+						<center>
+							<h4>$10</h4>
+						</center>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-container w3-row-padding" style="text-align: left; display: inline-block; margin: auto;">
+				<div class="w3-half">
+					<div class="w3-card">
+						<center>
+							<h3>Conference room</h3>
+						</center>
+						<ul>
+							<li>Battery/Electronics Recycling</li>
+							<li>Document shredding for 10¢/page</li>
+							<li>Copy/Print for 25¢/page color, 5¢/page B/W</li>
+							<li>Document scanning for 5¢/page</li>
+							<li>Conference room</li>
+							<li>Projector</li>
+							<li>Desk/chair</li>
+							<li>High-speed WiFi</li>
+							<li>Snacks</li>
+							<li>Microwave/coffeemaker</li>
+						</ul>
+						<center>
+							<h4>$40/hour</h4>
+						</center>
+					</div>
+				</div>
+				<div class="w3-half">
+					<div class="w3-card">
+						<center>
+							<h3>Walk-in</h3>
+						</center>
+						<ul>
+							<li>Battery/Electronics Recycling</li>
+							<li>Document shredding for 10¢/page</li>
+							<li>Copy/Print for 25¢/page color, 5¢/page B/W</li>
+							<li>Document scanning for 5¢/page</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--------
+		- NEARBY -
+		--------->
+
+		<!-- Parallax Image with Attractions Text -->
+		<div class="bgimg-3 w3-display-container w3-opacity-min">
+		  <div class="w3-display-middle">
+		    <span class="w3-xxlarge w3-text-white w3-wide">NEARBY</span>
+		  </div>
+		</div>
+
+		<!-- Container (Offering Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="nearby">
+		  <h3 class="w3-center">The ideal central location</h3>
+		  <div class="narrow-content">
+		  	Located walking distance from the courthouse, post office, parking garage, Marriott and the beautiful Golden Heart Plaza right on the Chena River. And if you're hungry or thirsty, the options are many:
+		  	<ul>
+		  		<li>Venue: grab coffee in the building, or take in some new art on First Fridays</li>
+		  		<li>The Crepery</li>
+		  		<li>Noodle House</li>
+		  		<li>River City Café</li>
+		  		<li>Bahn Thai</li>
+		  		<li>The Fudge Pot</li>
+		  		<li>Lavelle's and Lavelle's Taphouse</li>
+		  		<li>Goldie's</li>
+		  		<li>Midnight Mine</li>
+		  	</ul>
+
+		  	With other fun attractions nearby, including:
+		  	<ul>
+		  		<li>Escape Room AK</li>
+		  		<li>Fairbanks Ice Museum</li>
+		  		<li>Midnight Sun Festival</li>
+		  		<li>Yukon Quest building</li>
+		  		<li>Morris Thompson Cultural Center</li>
+		  	</ul>
+		  </div><br>
+		</div>
+
+		<!---------
+		- CONTACT -
+		---------->
+
+		<!-- Parallax Image with Contact Text -->
+		<div class="bgimg-4 w3-display-container w3-opacity-min">
+		  <div class="w3-display-middle">
+		     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+		  </div>
+		</div>
+
+		<!-- Container (Contact Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="contact" style="margin: auto; text-align: center;">
+		  <div class="w3-row w3-padding-32 w3-section" style="margin: auto; text-align: left;">
+		    <div class="w3-col m4 w3-container">
+		      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1696.0221368867997!2d-147.72082844786465!3d64.84379416418462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x513245488efba615%3A0xe3e9534bb781459a!2s516%202nd%20Ave%20%23322%2C%20Fairbanks%2C%20AK%2099701!5e0!3m2!1sen!2sus!4v1574210497874!5m2!1sen!2sus" width="100%" max-width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		    </div>
+		    <div class="w3-col m8 w3-panel">
+		      <div class="w3-large w3-margin-bottom">
+		      	<dl style="margin: 0px; margin-bottom:-25px;">
+		      		<dt>
+		        		<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 516 2nd Ave.
+		    		</dt>
+		    		<dd style="padding-left:11px; margin-bottom: 0px;">
+		        		Suite 322<br/>
+		        		Fairbanks, AK 99701-4739
+		        	</dd>
+		        </dl>
+		        <br>
+		        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 (571) 288-1339<br>
+		        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <a href="mailto:andrew@hivefbx.com">andrew@hivefbx.com</a><br>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+		  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+		  <div class="white" style="padding: 20px;">
+		  	© 2019 The Hive LLC
+		  </div>
+		<div>
+			<center>
+			    <a href="https://twitter.com/thehivefbx" class="social-link">
+					<img srcset="
+						img/Twitter.png 1x,
+						img/Twitter@2x.png 2x
+					" alt="The Hive's Twitter Profile" class="hive-colored-image social-icon" />
+				</a>
+				&nbsp;
+				<a href="https://instagram.com/thehivefbx" class="social-link">
+					<img src="img/Instagram.png" alt="The Hive's Instagram" class="hive-colored-image social-icon" />
+				</a>
+				&nbsp;
+				<a href="https://www.facebook.com/thehivefairbanks" class="social-link">
+					<img srcset="
+						img/Facebook.png 1x,
+						img/Facebook@2x.png 2x
+					" alt="The Hive's Facebook Page" class="hive-colored-image social-icon" />
+				</a>
+				&nbsp;
+				<a href="https://www.linkedin.com/company/thehivefbx" class="social-link">
+					<img srcset="
+						img/Linkedin.png 1x,
+						img/Linkedin@2x.png 2x
+					" alt="The Hive's LinkedIn Page" class="hive-colored-image social-icon" />
+				</a>
+			</center>
+		</div> 
+		</footer>
+		 
+		<script>
+		// Change style of navbar on scroll
+		window.onscroll = function() {myFunction()};
+		function myFunction() {
+		    var navbar = document.getElementById("myNavbar");
+		    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+		    } else {
+		        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+		    }
+		}
+
+		// Used to toggle the menu on small screens when clicking on the menu button
+		function toggleFunction() {
+		    var x = document.getElementById("navDemo");
+		    if (x.className.indexOf("w3-show") == -1) {
+		        x.className += " w3-show";
+		    } else {
+		        x.className = x.className.replace(" w3-show", "");
+		    }
+		}
+		</script>
 	</body>
 </html>

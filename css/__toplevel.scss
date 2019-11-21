@@ -1,0 +1,20 @@
+a {
+	color: $color-yellow;
+}
+
+a:hover {
+	color: $color-yellow-darker;
+}
+
+a:visited {
+	color: $color-purple;
+}
+
+a:active {
+	color: #color-orange;
+}
+
+p, div {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+}

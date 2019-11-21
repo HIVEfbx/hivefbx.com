@@ -2,9 +2,10 @@
 * Colors *
 *********/
 /* Palette URL: http://paletton.com/#uid=71p1K0koBqBf0-Pk5tnrLlRvKh2 */
-/* Main Secondary color (1) */
-/* Main Secondary color (2) */
-/* Main Complement color */
+/* primary color */
+/* secondary 1 */
+/* secondary 2 */
+/* complementary */
 /*******
 * Text *
 *******/
@@ -17,7 +18,53 @@ a:hover {
 }
 
 a:visited {
-  color: #EAD057;
+  color: #452F92;
+}
+
+a:active {
+  color: #color-orange;
+}
+
+p, div {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px 100px;
+}
+
+.hive-colored-image {
+  /* thanks to https://codepen.io/sosuke/pen/Pjoqqp and https://stackoverflow.com/a/50942954/4789448 */
+  filter: brightness(0) saturate(100%) invert(92%) sepia(68%) saturate(981%) hue-rotate(330deg) brightness(89%) contrast(85%);
+}
+
+/* all larger sizes */
+.hero-image {
+  position: relative;
+  top: -350px;
+  margin: 0px;
+  max-width: 1200px;
+}
+
+/* 800 or below */
+@media only screen and (max-width: 800px) {
+  .hero-image {
+    position: relative;
+    top: -350px;
+    margin: 0px;
+    width: 100%;
+  }
+}
+.icon {
+  width: 32px;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.footer {
+  bottom: 0px;
+  background-color: #208C6B;
+  padding: 10px;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
