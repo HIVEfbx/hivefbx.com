@@ -70,6 +70,12 @@ p, div {
   font-family: Georgia, serif;
 }
 
+@media (max-width: 600px) {
+  .slogan {
+    font-size: 15px;
+    font-family: Georgia, serif;
+  }
+}
 .header {
   display: flex;
   flex-flow: row nowrap;
@@ -81,6 +87,12 @@ p, div {
   font-size: 36px;
 }
 
+@media (max-width: 600px) {
+  .intro-text {
+    font-family: Georgia, serif;
+    font-size: 18px;
+  }
+}
 .heading {
   font-family: Georgia, serif;
   font-size: 24px;
@@ -123,6 +135,11 @@ p, div {
   padding: 100px;
 }
 
+@media (max-width: 600px) {
+  .padding-huge {
+    padding: 30px;
+  }
+}
 .narrow-content {
   margin-left: auto;
   margin-right: auto;

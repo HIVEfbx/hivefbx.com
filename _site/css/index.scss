@@ -8,6 +8,12 @@
 	font-size: $size-subtitle;
 	font-family: $font-fancy;
 }
+@media (max-width:600px) {
+	.slogan {
+		font-size: $size-subtitle-phone;
+		font-family: $font-fancy;
+	}	
+}
 
 .header {
 	display: flex;
@@ -18,6 +24,12 @@
 .intro-text {
 	font-family: $font-fancy;
 	font-size: $size-intro;
+}
+@media (max-width:600px) {
+	.intro-text {
+		font-family: $font-fancy;
+		font-size: $size-intro-phone;
+	}
 }
 
 .heading {
@@ -60,6 +72,11 @@
 
 .padding-huge {
 	padding: 100px;
+}
+@media (max-width:600px) {
+	.padding-huge {
+		padding: 30px;
+	}
 }
 
 .narrow-content {
