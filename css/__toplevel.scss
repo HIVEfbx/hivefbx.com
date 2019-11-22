@@ -2,16 +2,16 @@ a {
 	color: $color-yellow;
 }
 
-a:hover {
-	color: $color-yellow-darker;
+a:visited {
+	color: $color-red-lightest;
 }
 
-a:visited {
-	color: $color-purple;
+a:hover {
+	color: $color-yellow-lighter;
 }
 
 a:active {
-	color: #color-orange;
+	color: #color-teal;
 }
 
 p, div {

@@ -1,18 +1,22 @@
 @import 'common';
 
-.company-name {
-	font-size: $size-hero;
-}
-
-.slogan {
-	font-size: $size-subtitle;
-	font-family: $font-fancy;
+body {
+	font-size: $size-text;	
 }
 @media (max-width:600px) {
-	.slogan {
-		font-size: $size-subtitle-phone;
-		font-family: $font-fancy;
-	}	
+	body {
+		font-size: $size-text-phone;	
+	}
+}
+
+.byline {
+	font-size: 80%;
+	color: white;
+	opacity: 0.7;
+}
+
+.company-name {
+	font-size: $size-hero;
 }
 
 .header {
@@ -29,6 +33,17 @@
 	.intro-text {
 		font-family: $font-fancy;
 		font-size: $size-intro-phone;
+	}
+}
+
+.slogan {
+	font-family: $font-fancy;
+	font-size: $size-subheading;
+}
+@media (max-width:600px) {
+	.slogan {
+		font-family: $font-fancy;
+		font-size: $size-subheading-phone;
 	}
 }
 
@@ -64,10 +79,22 @@
 
 .display-bottom-third{
 	position:absolute;
-	top:80%;
+	top:90%;
 	left:50%;
-	transform:translate(-50%,-80%);
-	-ms-transform:translate(-50%,-80%);
+	transform:translate(-50%,-90%);
+	-ms-transform:translate(-50%,-90%);
+}
+
+.biopic {
+	width: 100px;
+	float: left;
+	margin: 10px 20px;
+} 
+@media (max-width:600px) {
+	.biopic {
+		width: 100px;
+		margin: 10px 20px;
+	}
 }
 
 .padding-huge {
@@ -83,6 +110,10 @@
 	margin-left:auto;
 	margin-right:auto;
 	max-width:400px;
+}
+
+.w3-card {
+	padding: 20px 0px 20px 0px;
 }
 
 /* the following was retrieved from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h 11/19/19 */
@@ -112,15 +143,9 @@ body, html {
   min-height: 400px;
 }
 
-/* attractions image */
-.bgimg-3 {
-  background-image: url("/img/desk3.jpg");
-  min-height: 400px;
-}
-
 /* contact image */
 .bgimg-4 {
-  background-image: url("/img/office1.jpg");
+  background-image: url("/img/office4.jpg");
   min-height: 400px;
 }
 
@@ -188,7 +213,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-dropdown-click,.w3-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
 .w3-dropdown-hover:hover .w3-dropdown-content{display:block}
 .w3-dropdown-hover:first-child,.w3-dropdown-click:hover{background-color:#ccc;color:#000}
-.w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:$color-yellow;color:#000}
+.w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:$color-yellow-lightest;color:#000}
 .w3-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
 .w3-check,.w3-radio{width:24px;height:24px;position:relative;top:6px}
 .w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
@@ -244,7 +269,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-display-position{position:absolute}
 .w3-circle{border-radius:50%}
 .w3-round-small{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:32px}
-.w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third,.w3-row-padding>.w3-twothird,.w3-row-padding>.w3-threequarter,.w3-row-padding>.w3-quarter,.w3-row-padding>.w3-col{padding:0 8px}
+.w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third,.w3-row-padding>.w3-twothird,.w3-row-padding>.w3-threequarter,.w3-row-padding>.w3-quarter,.w3-row-padding>.w3-col{padding:8px 8px}
 .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
 .w3-code,.w3-codespan{font-family:Consolas,"courier new";font-size:16px}
 .w3-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
@@ -281,7 +306,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .w3-left{float:left!important}.w3-right{float:right!important}
-.w3-button:hover{color:#000!important;background-color:$color-yellow!important}
+.w3-button:hover{color:#000!important;background-color:$color-yellow-lightest!important}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */

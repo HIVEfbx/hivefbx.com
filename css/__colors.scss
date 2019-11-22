@@ -1,32 +1,25 @@
-/* Palette URL: http://paletton.com/#uid=71p1K0koBqBf0-Pk5tnrLlRvKh2 */
+/* Palette URL: http://paletton.com/#uid=33g0I0kI1iYIIaFGVfmJwmpLgqK */
 
 /* primary color */
-$color-yellow-lightest: #FFEA87;
-$color-yellow-lighter: #EAD057;
-$color-yellow: #D4B731;
-$color-yellow-darker: #AE9317;
-$color-yellow-darkest: #887001;
+$color-yellow-lightest: #D59D00;
+$color-yellow-lighter: #B28400;
+$color-yellow: #977000;
+$color-yellow-darker: #7A5A00;
+$color-yellow-darkest: #553F00;
 
-/* secondary 1 */
-$color-teal-lightest: #60B59C;
-$color-teal-lighter: #3A9B7D;
-$color-teal: #208C6B;
-$color-teal-darker: #0F7355;
-$color-teal-darkest: #015A3F;
+/* complementary 1 */
+$color-teal-lightest: #008379;
+$color-teal-lighter: #006E66;
+$color-teal: #005D56;
+$color-teal-darker: #004B46;
+$color-teal-darkest: #003430;
 
-/* secondary 2 */
-$color-orange-lightest: #FFB187;
-$color-orange-lighter: #EA8A57;
-$color-orange: #D46A31;
-$color-orange-darker: #AE4C17;
-$color-orange-darkest: #883001;
-
-/* complementary */
-$color-purple-lightest: #7F6EBC;
-$color-purple-lighter: #5C48A1;
-$color-purple: #452F92;
-$color-purple-darker: #311C78;
-$color-purple-darkest: #1E0C5D;
+/* complementary 2 */
+$color-red-lightest: #BC003F;
+$color-red-lighter: #9D0035;
+$color-red: #85002D;
+$color-red-darker: #6C0024;
+$color-red-darkest: #4B0019;
 
 .white {
 	color: white;
@@ -38,4 +31,8 @@ $color-purple-darkest: #1E0C5D;
 
 .hive-yellow-bg {
 	background-color: $color-yellow;
+}
+
+.hive-teal-bg {
+	background-color: $color-teal-darkest;	
 }

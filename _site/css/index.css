@@ -1,34 +1,37 @@
-/* Palette URL: http://paletton.com/#uid=71p1K0koBqBf0-Pk5tnrLlRvKh2 */
+/* Palette URL: http://paletton.com/#uid=33g0I0kI1iYIIaFGVfmJwmpLgqK */
 /* primary color */
-/* secondary 1 */
-/* secondary 2 */
-/* complementary */
+/* complementary 1 */
+/* complementary 2 */
 .white {
   color: white;
 }
 
 .hive-yellow {
-  color: #D4B731;
+  color: #977000;
 }
 
 .hive-yellow-bg {
-  background-color: #D4B731;
+  background-color: #977000;
+}
+
+.hive-teal-bg {
+  background-color: #003430;
 }
 
 a {
-  color: #D4B731;
-}
-
-a:hover {
-  color: #AE9317;
+  color: #977000;
 }
 
 a:visited {
-  color: #452F92;
+  color: #BC003F;
+}
+
+a:hover {
+  color: #B28400;
 }
 
 a:active {
-  color: #color-orange;
+  color: #color-teal;
 }
 
 p, div {
@@ -44,9 +47,9 @@ p, div {
   * 
   * applied to a bitmap with a solid foreground color, 
   * rotates the color to solid black (the brightness 
-  * and saturate entries), then to D4B731 with invert...contrast 
+  * and saturate entries), then to D59D00 with invert...contrast 
   */
-  filter: brightness(0) saturate(100%) invert(84%) sepia(87%) saturate(807%) hue-rotate(328deg) brightness(87%) contrast(91%);
+  filter: brightness(0) saturate(100%) invert(67%) sepia(11%) saturate(5770%) hue-rotate(8deg) brightness(91%) contrast(105%);
 }
 
 .hero-image {
@@ -56,26 +59,30 @@ p, div {
 
 .footer {
   bottom: 0px;
-  background-color: #208C6B;
+  background-color: #005D56;
   padding: 10px;
   color: white;
+}
+
+body {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+}
+.byline {
+  font-size: 80%;
+  color: white;
+  opacity: 0.7;
 }
 
 .company-name {
   font-size: 48px;
 }
 
-.slogan {
-  font-size: 24px;
-  font-family: Georgia, serif;
-}
-
-@media (max-width: 600px) {
-  .slogan {
-    font-size: 15px;
-    font-family: Georgia, serif;
-  }
-}
 .header {
   display: flex;
   flex-flow: row nowrap;
@@ -84,18 +91,29 @@ p, div {
 
 .intro-text {
   font-family: Georgia, serif;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 @media (max-width: 600px) {
   .intro-text {
     font-family: Georgia, serif;
-    font-size: 18px;
+    font-size: 15px;
+  }
+}
+.slogan {
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .slogan {
+    font-family: Georgia, serif;
+    font-size: 14px;
   }
 }
 .heading {
   font-family: Georgia, serif;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .social-icon {
@@ -125,12 +143,24 @@ p, div {
 
 .display-bottom-third {
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
-  transform: translate(-50%, -80%);
-  -ms-transform: translate(-50%, -80%);
+  transform: translate(-50%, -90%);
+  -ms-transform: translate(-50%, -90%);
 }
 
+.biopic {
+  width: 100px;
+  float: left;
+  margin: 10px 20px;
+}
+
+@media (max-width: 600px) {
+  .biopic {
+    width: 100px;
+    margin: 10px 20px;
+  }
+}
 .padding-huge {
   padding: 100px;
 }
@@ -144,6 +174,10 @@ p, div {
   margin-left: auto;
   margin-right: auto;
   max-width: 400px;
+}
+
+.w3-card {
+  padding: 20px 0px 20px 0px;
 }
 
 /* the following was retrieved from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h 11/19/19 */
@@ -172,15 +206,9 @@ body, html {
   min-height: 400px;
 }
 
-/* attractions image */
-.bgimg-3 {
-  background-image: url("/img/desk3.jpg");
-  min-height: 400px;
-}
-
 /* contact image */
 .bgimg-4 {
-  background-image: url("/img/office1.jpg");
+  background-image: url("/img/office4.jpg");
   min-height: 400px;
 }
 
@@ -612,7 +640,7 @@ a {
 }
 
 .w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-click:hover > .w3-button:first-child {
-  background-color: #D4B731;
+  background-color: #D59D00;
   color: #000;
 }
 
@@ -1160,7 +1188,7 @@ a {
 }
 
 .w3-row-padding, .w3-row-padding > .w3-half, .w3-row-padding > .w3-third, .w3-row-padding > .w3-twothird, .w3-row-padding > .w3-threequarter, .w3-row-padding > .w3-quarter, .w3-row-padding > .w3-col {
-  padding: 0 8px;
+  padding: 8px 8px;
 }
 
 .w3-container, .w3-panel {
@@ -1520,7 +1548,7 @@ a {
 
 .w3-button:hover {
   color: #000 !important;
-  background-color: #D4B731 !important;
+  background-color: #D59D00 !important;
 }
 
 .w3-transparent, .w3-hover-none:hover {
@@ -1654,7 +1682,7 @@ a {
 
 .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
   color: #000 !important;
-  background-color: #D4B731 !important;
+  background-color: #977000 !important;
 }
 
 .w3-dark-grey, .w3-hover-dark-grey:hover, .w3-dark-gray, .w3-hover-dark-gray:hover {
