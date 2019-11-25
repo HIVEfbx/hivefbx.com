@@ -3,20 +3,49 @@
 	.display-top-third{
 		position:absolute;
 		top:50%;
-		left:0%;
-		transform:translate(-0%,-50%);
-		-ms-transform:translate(-0%,-50%);
+		left:5%;
+		transform:translate(-5%,-50%);
+		-ms-transform:translate(-5%,-50%);
 	}
 
 	.display-bottom-third{
 		position:absolute;
 		top:50%;
-		left:100%;
-		transform:translate(-100%,-50%);
-		-ms-transform:translate(-100%,-50%);
+		left:95%;
+		transform:translate(-95%,-50%);
+		-ms-transform:translate(-95%,-50%);
+	}
+
+	body {
+		font-size: $size-text-phone;	
+	}
+
+	.nav-item {
+		font-size: $size-navigation-phone;
+	}
+
+	.intro-text {
+		font-size: $size-intro-phone;
+	}
+
+	.slogan {
+		font-size: $size-subheading-phone;
+	}
+
+	.title {
+		font-size: $size-hero-phone;
+	}
+
+	.heading {
+		font-size: $size-heading-phone;
+	}
+
+	.subheading {
+		font-size: $size-subheading-phone;
 	}
 }
 
+/* phones in portrait */
 @media (max-width:600px) {
 	body {
 		font-size: $size-text-phone;	

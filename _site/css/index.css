@@ -1935,19 +1935,48 @@ body {
   .display-top-third {
     position: absolute;
     top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
+    left: 5%;
+    transform: translate(-5%, -50%);
+    -ms-transform: translate(-5%, -50%);
   }
 
   .display-bottom-third {
     position: absolute;
     top: 50%;
-    left: 100%;
-    transform: translate(-100%, -50%);
-    -ms-transform: translate(-100%, -50%);
+    left: 95%;
+    transform: translate(-95%, -50%);
+    -ms-transform: translate(-95%, -50%);
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    font-size: 15px;
+  }
+
+  .intro-text {
+    font-size: 17px;
+  }
+
+  .slogan {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .subheading {
+    font-size: 18px;
   }
 }
+/* phones in portrait */
 @media (max-width: 600px) {
   body {
     font-size: 14px;
@@ -1958,7 +1987,7 @@ body {
   }
 
   .intro-text {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .slogan {
