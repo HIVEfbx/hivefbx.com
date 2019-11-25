@@ -123,42 +123,45 @@ body, html {
   line-height: 1.8;
 }
 
-/* Create a Parallax Effect */
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/img/desk1.jpg');
+}
+
+/* Offerings image */
+.bgimg-2 {
+  background-image: url("/img/desk4.jpg");
+}
+
+/* contact image */
+.bgimg-4 {
+  background-image: url("/img/office4.jpg");
+}
+
+/* desktop */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('/img/desk1.jpg');
-  min-height: 100%;
+  min-height: 100vh;
 }
-
-/* Offerings image */
-.bgimg-2 {
-  background-image: url("/img/desk4.jpg");
+.bgimg-2, .bgimg-3, .bgimg-4 {
   min-height: 400px;
 }
 
-/* contact image */
-.bgimg-4 {
-  background-image: url("/img/office4.jpg");
-  min-height: 400px;
+/* tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	  background-attachment: scroll;
+
+  }
 }
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bg-img-4 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
 
 /* the rest of the content below was retrieved from https://www.w3schools.com/w3css/4/w3.css 11/19/19 */
 
