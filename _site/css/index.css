@@ -64,165 +64,43 @@ p, div {
   color: white;
 }
 
-body {
-  font-size: 14px;
+/* retrieved from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h 11/19/19 */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
 }
 
-@media (max-width: 600px) {
-  body {
-    font-size: 10px;
-  }
-}
-.byline {
-  font-size: 80%;
-  color: white;
-  opacity: 0.7;
-}
-
-.company-name {
-  font-size: 48px;
-}
-
-.header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
-
-.intro-text {
-  font-family: Georgia, serif;
-  font-size: 30px;
-}
-
-@media (max-width: 600px) {
-  .intro-text {
-    font-family: Georgia, serif;
-    font-size: 15px;
-  }
-}
-.slogan {
-  font-family: Georgia, serif;
-  font-size: 18px;
-}
-
-@media (max-width: 600px) {
-  .slogan {
-    font-family: Georgia, serif;
-    font-size: 14px;
-  }
-}
-.heading {
-  font-family: Georgia, serif;
-  font-size: 36px;
-}
-
-.social-icon {
-  width: 32px;
-}
-
-.social-link {
-  text-decoration: none;
-}
-
-.section-image {
-  margin: 20px;
-  max-width: 800px;
-}
-
-.opaquebox {
-  background-color: #ffffff44;
-}
-
-.display-top-third {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  -ms-transform: translate(-50%, -20%);
-}
-
-.display-bottom-third {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -90%);
-  -ms-transform: translate(-50%, -90%);
-}
-
-.biopic {
-  width: 100px;
-  float: left;
-  margin: 10px 20px;
-}
-
-@media (max-width: 600px) {
-  .biopic {
-    width: 100px;
-    margin: 10px 20px;
-  }
-}
-.padding-huge {
-  padding: 100px;
-}
-
-@media (max-width: 600px) {
-  .padding-huge {
-    padding: 30px;
-  }
-}
-.narrow-content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 400px;
-}
-
-.w3-card {
-  padding: 20px 0px 20px 0px;
-}
-
-/* the following was retrieved from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h 11/19/19 */
 body, html {
   height: 100%;
+  color: #777;
   line-height: 1.8;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url("/img/desk1.jpg");
-}
-
-/* Offerings image */
-.bgimg-2 {
-  background-image: url("/img/desk4.jpg");
-}
-
-/* contact image */
-.bgimg-4 {
-  background-image: url("/img/office4.jpg");
-}
-
-/* desktop */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* First image (Logo. Full height) */
 .bgimg-1 {
-  min-height: 100vh;
+  background-image: url("/w3images/parallax1.jpg");
+  min-height: 100%;
 }
 
-.bgimg-2, .bgimg-3, .bgimg-4 {
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
   min-height: 400px;
 }
 
-/* tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    background-attachment: scroll;
-  }
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
 }
+
 .w3-wide {
   letter-spacing: 10px;
 }
@@ -231,7 +109,14 @@ body, html {
   cursor: pointer;
 }
 
-/* the rest of the content below was retrieved from https://www.w3schools.com/w3css/4/w3.css 11/19/19 */
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+/* retrieved from https://www.w3schools.com/w3css/4/w3.css 11/19/19 */
 /* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
 html {
   box-sizing: border-box;
@@ -644,7 +529,7 @@ a {
 }
 
 .w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-click:hover > .w3-button:first-child {
-  background-color: #D59D00;
+  background-color: #ccc;
   color: #000;
 }
 
@@ -1192,7 +1077,7 @@ a {
 }
 
 .w3-row-padding, .w3-row-padding > .w3-half, .w3-row-padding > .w3-third, .w3-row-padding > .w3-twothird, .w3-row-padding > .w3-threequarter, .w3-row-padding > .w3-quarter, .w3-row-padding > .w3-col {
-  padding: 8px 8px;
+  padding: 0 8px;
 }
 
 .w3-container, .w3-panel {
@@ -1552,7 +1437,7 @@ a {
 
 .w3-button:hover {
   color: #000 !important;
-  background-color: #D59D00 !important;
+  background-color: #ccc !important;
 }
 
 .w3-transparent, .w3-hover-none:hover {
@@ -1686,7 +1571,7 @@ a {
 
 .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
   color: #000 !important;
-  background-color: #977000 !important;
+  background-color: #f1f1f1 !important;
 }
 
 .w3-dark-grey, .w3-hover-dark-grey:hover, .w3-dark-gray, .w3-hover-dark-gray:hover {
@@ -1936,6 +1821,122 @@ a {
 
 .w3-border-pale-blue, .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
+}
+
+body {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+}
+.byline {
+  font-size: 80%;
+  color: white;
+  opacity: 0.7;
+}
+
+.company-name {
+  font-size: 48px;
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.intro-text {
+  font-family: Georgia, serif;
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .intro-text {
+    font-family: Georgia, serif;
+    font-size: 15px;
+  }
+}
+.slogan {
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .slogan {
+    font-family: Georgia, serif;
+    font-size: 14px;
+  }
+}
+.heading {
+  font-family: Georgia, serif;
+  font-size: 36px;
+}
+
+.social-icon {
+  width: 32px;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.section-image {
+  margin: 20px;
+  max-width: 800px;
+}
+
+.opaquebox {
+  background-color: #ffffff44;
+}
+
+.display-top-third {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -20%);
+}
+
+.display-bottom-third {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  -ms-transform: translate(-50%, -90%);
+}
+
+.biopic {
+  width: 100px;
+  float: left;
+  margin: 10px 20px;
+}
+
+@media (max-width: 600px) {
+  .biopic {
+    width: 100px;
+    margin: 10px 20px;
+  }
+}
+.padding-huge {
+  padding: 100px;
+}
+
+@media (max-width: 600px) {
+  .padding-huge {
+    padding: 30px;
+  }
+}
+.narrow-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+
+.w3-card {
+  padding: 20px 0px 20px 0px;
 }
 
 /*# sourceMappingURL=index.css.map */
