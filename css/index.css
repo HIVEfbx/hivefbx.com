@@ -22,6 +22,10 @@
   background-color: #977000 !important;
 }
 
+.lightest-yellow-bg {
+  background-color: #D59D00 !important;
+}
+
 .hive-teal-bg {
   background-color: #003430;
 }
@@ -57,7 +61,7 @@ p, div {
   * rotates the color to solid black (the brightness 
   * and saturate entries), then to D59D00 with invert...contrast 
   */
-  filter: brightness(0) saturate(100%) invert(67%) sepia(11%) saturate(5770%) hue-rotate(8deg) brightness(91%) contrast(105%);
+  filter: brightness(0) saturate(100%) invert(56%) sepia(95%) saturate(1918%) hue-rotate(15deg) brightness(101%) contrast(101%);
 }
 
 .hero-image {
@@ -1390,7 +1394,7 @@ a {
 }
 
 .w3-margin-right {
-  margin-right: 16px !important;
+  margin-right: 5px !important;
 }
 
 .w3-padding-small {
@@ -1826,6 +1830,17 @@ a {
   border-color: #e7ffff !important;
 }
 
+@media (hover: none) {
+  .w3-opacity {
+    opacity: 1;
+  }
+}
+/* show home boxes over first image aligned horizontally on phones in landscape */
+@media (hover: none) and (max-height: 500px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    min-width: 100vw;
+  }
+}
 body {
   font-size: 14px;
 }
@@ -1837,32 +1852,33 @@ body {
 .byline {
   font-size: 80%;
   color: white;
-  opacity: 0.7;
 }
 
 .company-name {
+  font-family: Georgia, serif;
   font-size: 48px;
 }
 
-.header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
-
 .intro-text {
-  font-family: Georgia, serif;
   font-size: 30px;
 }
 
 .slogan {
-  font-family: Georgia, serif;
   font-size: 18px;
+}
+
+.title {
+  font-family: Georgia, serif;
+  font-size: 48px;
 }
 
 .heading {
   font-family: Georgia, serif;
-  font-size: 36px;
+  font-size: 24px;
+}
+
+.subheading {
+  font-size: 18px;
 }
 
 .social-icon {
@@ -1892,10 +1908,10 @@ body {
 
 .display-bottom-third {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 50%;
-  transform: translate(-50%, -90%);
-  -ms-transform: translate(-50%, -90%);
+  transform: translate(-50%, -80%);
+  -ms-transform: translate(-50%, -80%);
 }
 
 .biopic {
@@ -1914,7 +1930,25 @@ body {
   max-width: 400px;
 }
 
-@media (max-width: 1600px) {
+/* show home boxes over first image aligned horizontally on phones in landscape */
+@media (hover: none) and (max-height: 500px) {
+  .display-top-third {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+  }
+
+  .display-bottom-third {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
+  }
+}
+@media (max-width: 600px) {
   body {
     font-size: 14px;
   }
@@ -1924,12 +1958,22 @@ body {
   }
 
   .intro-text {
-    font-family: Georgia, serif;
     font-size: 20px;
   }
 
   .slogan {
-    font-family: Georgia, serif;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .subheading {
     font-size: 18px;
   }
 
@@ -1940,6 +1984,98 @@ body {
 
   .padding-huge {
     padding: 30px;
+  }
+}
+/* small desktop windows */
+@media (hover: hover) and (max-height: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    font-size: 15px;
+  }
+
+  .company-name {
+    font-size: 30px;
+  }
+
+  .intro-text {
+    font-size: 15px;
+  }
+
+  .slogan {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .subheading {
+    font-size: 18px;
+  }
+
+  .company-logo {
+    height: 60px;
+  }
+}
+/* very small desktop windows */
+@media (hover: hover) and (max-height: 400px) {
+  body {
+    font-size: 10px;
+  }
+
+  .nav-item {
+    font-size: 10px;
+  }
+
+  .company-name {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 10px;
+  }
+
+  .slogan {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .heading {
+    font-size: 15px;
+  }
+
+  .subheading {
+    font-size: 12px;
+  }
+
+  .company-logo {
+    height: 40px;
+  }
+
+  .display-top-third {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+  }
+
+  .display-bottom-third {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
   }
 }
 

@@ -1,0 +1,151 @@
+/* show home boxes over first image aligned horizontally on phones in landscape */
+@media (hover:none) and (max-height:500px) {
+	.display-top-third{
+		position:absolute;
+		top:50%;
+		left:0%;
+		transform:translate(-0%,-50%);
+		-ms-transform:translate(-0%,-50%);
+	}
+
+	.display-bottom-third{
+		position:absolute;
+		top:50%;
+		left:100%;
+		transform:translate(-100%,-50%);
+		-ms-transform:translate(-100%,-50%);
+	}
+}
+
+@media (max-width:600px) {
+	body {
+		font-size: $size-text-phone;	
+	}
+
+	.nav-item {
+		font-size: $size-navigation-phone;
+	}
+
+	.intro-text {
+		font-size: $size-intro-phone;
+	}
+
+	.slogan {
+		font-size: $size-subheading-phone;
+	}
+
+	.title {
+		font-size: $size-hero-phone;
+	}
+
+	.heading {
+		font-size: $size-heading-phone;
+	}
+
+	.subheading {
+		font-size: $size-subheading-phone;
+	}
+
+	.biopic {
+		width: 100px;
+		margin: 10px 20px;
+	}
+
+	.padding-huge {
+		padding: 30px;
+	}
+}
+
+/* small desktop windows */
+@media (hover:hover) and (max-height:600px) {
+	body {
+		font-size: $size-text-small;	
+	}
+
+	.nav-item {
+		font-size: $size-navigation-small;
+	}
+
+	.company-name {
+		font-size: $size-hero-small;
+	}
+
+	.intro-text {
+		font-size: $size-intro-small;
+	}
+
+	.slogan {
+		font-size: $size-subheading-small;
+	}
+
+	.title {
+		font-size: $size-hero-small;
+	}
+
+	.heading {
+		font-size: $size-heading-small;
+	}
+
+	.subheading {
+		font-size: $size-subheading-small;
+	}
+
+	.company-logo {
+		height: 60px;
+	}
+}
+
+/* very small desktop windows */
+@media (hover:hover) and (max-height:400px) {
+	body {
+		font-size: $size-text-xsmall;	
+	}
+
+	.nav-item {
+		font-size: $size-navigation-xsmall;
+	}
+
+	.company-name {
+		font-size: $size-hero-xsmall;
+	}
+
+	.intro-text {
+		font-size: $size-intro-xsmall;
+	}
+
+	.slogan {
+		font-size: $size-subheading-xsmall;
+	}
+
+	.title {
+		font-size: $size-hero-xsmall;
+	}
+
+	.heading {
+		font-size: $size-heading-xsmall;
+	}
+
+	.subheading {
+		font-size: $size-subheading-xsmall;
+	}
+
+	.company-logo {
+		height: 40px;
+	}
+
+	.display-top-third{
+		position:absolute;
+		top:50%;
+		left:0%;
+		transform:translate(-0%,-50%);
+		-ms-transform:translate(-0%,-50%);
+	}
+
+	.display-bottom-third{
+		position:absolute;
+		top:50%;
+		left:100%;
+		transform:translate(-100%,-50%);
+		-ms-transform:translate(-100%,-50%);
+	}
+}

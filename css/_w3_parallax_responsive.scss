@@ -1,0 +1,12 @@
+@media (hover:none) {
+	.w3-opacity {
+		opacity: 1.0;
+	}
+}
+
+/* show home boxes over first image aligned horizontally on phones in landscape */
+@media (hover:none) and (max-height:500px) {
+	.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+		min-width: 100vw;
+	}
+}

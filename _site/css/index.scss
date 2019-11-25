@@ -12,32 +12,33 @@ body {
 .byline {
 	font-size: 80%;
 	color: white;
-	opacity: 0.7;
 }
 
 .company-name {
+	font-family: $font-fancy;
 	font-size: $size-hero;
 }
 
-.header {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-}
-
 .intro-text {
-	font-family: $font-fancy;
 	font-size: $size-intro;
 }
 
 .slogan {
-	font-family: $font-fancy;
 	font-size: $size-subheading;
+}
+
+.title {
+	font-family: $font-fancy;
+	font-size: $size-hero;
 }
 
 .heading {
 	font-family: $font-fancy;
-	font-size: $size-subtitle;
+	font-size: $size-heading;
+}
+
+.subheading {
+	font-size: $size-subheading;
 }
 
 .social-icon {
@@ -67,10 +68,10 @@ body {
 
 .display-bottom-third{
 	position:absolute;
-	top:90%;
+	top:80%;
 	left:50%;
-	transform:translate(-50%,-90%);
-	-ms-transform:translate(-50%,-90%);
+	transform:translate(-50%,-80%);
+	-ms-transform:translate(-50%,-80%);
 }
 
 .biopic {
@@ -89,4 +90,4 @@ body {
 	max-width:400px;
 }
 
-@import 'index_phone';
+@import 'index_responsive';
