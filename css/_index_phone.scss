@@ -1,0 +1,28 @@
+@media (max-width:1600px) {
+	body {
+		font-size: $size-text-phone;	
+	}
+
+	.nav-item {
+		font-size: $size-navigation-phone;
+	}
+
+	.intro-text {
+		font-family: $font-fancy;
+		font-size: $size-intro-phone;
+	}
+
+	.slogan {
+		font-family: $font-fancy;
+		font-size: $size-subheading-phone;
+	}
+
+	.biopic {
+		width: 100px;
+		margin: 10px 20px;
+	}
+
+	.padding-huge {
+		padding: 30px;
+	}
+}

@@ -1830,11 +1830,10 @@ body {
   font-size: 14px;
 }
 
-@media (max-width: 600px) {
-  body {
-    font-size: 10px;
-  }
+.nav-item {
+  font-size: 18px;
 }
+
 .byline {
   font-size: 80%;
   color: white;
@@ -1856,23 +1855,11 @@ body {
   font-size: 30px;
 }
 
-@media (max-width: 600px) {
-  .intro-text {
-    font-family: Georgia, serif;
-    font-size: 15px;
-  }
-}
 .slogan {
   font-family: Georgia, serif;
   font-size: 18px;
 }
 
-@media (max-width: 600px) {
-  .slogan {
-    font-family: Georgia, serif;
-    font-size: 14px;
-  }
-}
 .heading {
   font-family: Georgia, serif;
   font-size: 36px;
@@ -1917,25 +1904,43 @@ body {
   margin: 10px 20px;
 }
 
-@media (max-width: 600px) {
-  .biopic {
-    width: 100px;
-    margin: 10px 20px;
-  }
-}
 .padding-huge {
   padding: 100px;
 }
 
-@media (max-width: 600px) {
-  .padding-huge {
-    padding: 30px;
-  }
-}
 .narrow-content {
   margin-left: auto;
   margin-right: auto;
   max-width: 400px;
+}
+
+@media (max-width: 1600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    font-size: 15px;
+  }
+
+  .intro-text {
+    font-family: Georgia, serif;
+    font-size: 20px;
+  }
+
+  .slogan {
+    font-family: Georgia, serif;
+    font-size: 18px;
+  }
+
+  .biopic {
+    width: 100px;
+    margin: 10px 20px;
+  }
+
+  .padding-huge {
+    padding: 30px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
