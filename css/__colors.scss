@@ -25,6 +25,14 @@ $color-red-darkest: #4B0019;
 	color: white;
 }
 
+.black-text, .black-text:hover, .black-text:active, .black-text:visited {
+	color: black;
+}
+
+.darkest-teal-text, .darkest-teal-text:hover, .darkest-teal-text:active, .darkest-teal-text:visited {
+	color: $color-teal-darkest;
+}
+
 .hive-yellow {
 	color: $color-yellow;
 }
