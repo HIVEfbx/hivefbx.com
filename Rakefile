@@ -12,7 +12,7 @@ task :serve do
 	require 'shell'
 	shell = Shell.new
 	shell.pushd '_site'
-	shell.system('python -m SimpleHTTPServer 4000 --bind localhost &')
+	shell.system('python -m http.server 4000 --bind localhost &')
 	puts 'Loading site...'
 	sleep 3
 	shell.system('open http://localhost:4000')
