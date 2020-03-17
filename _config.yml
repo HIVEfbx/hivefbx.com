@@ -1,2 +1,2 @@
 url: https://hivefbx.com
-exclude: [ Rakefile , LICENSE, Gemfile, Gemfile.lock, README.md, .gitignore, vendor, Brewfile ]
+exclude: [ Rakefile , LICENSE, Gemfile, Gemfile.lock, README.md, .gitignore, vendor, Brewfile, scripts/publish, Makefile ]

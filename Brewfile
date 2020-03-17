@@ -1,2 +1,3 @@
-brew 'sass/sass/sass'
 brew 'awscli'
+brew 'rbenv'
+brew 'sass'
