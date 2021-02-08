@@ -19,3 +19,6 @@ endserve:
 
 publish:
 	./scripts/publish
+
+bust-cache:
+	aws --profile hivefbx cloudfront create-invalidation --distribution-id EZEUY9RAFTGQL --paths "$(HIVE_PATHS)"
