@@ -22,3 +22,6 @@ publish:
 
 bust-cache:
 	aws --profile hivefbx cloudfront create-invalidation --distribution-id EZEUY9RAFTGQL --paths "$(HIVE_PATHS)"
+
+check-cache-invalidations:
+	aws --profile hivefbx cloudfront list-invalidations --distribution-id EZEUY9RAFTGQL | jq '.InvalidationList.Items[].Status'
