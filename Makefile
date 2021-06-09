@@ -9,7 +9,7 @@ build:
 	rbenv exec bundle exec jekyll build
 
 serve:
-	cd _site && python -m http.server 4000 --bind localhost &
+	cd _site && python3 -m http.server 4000 --bind localhost &
 	echo "Loading site..."
 	sleep 3
 	open http://localhost:4000
