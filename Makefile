@@ -1,4 +1,5 @@
 init:
+	brew update
 	brew bundle
 	rbenv install --skip-existing
 	rbenv exec gem install bundler
